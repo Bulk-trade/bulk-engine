@@ -113,7 +113,7 @@ fn place_order<'info>(
     if order_params.market_type == DriftMarketType::Perp {
         drift::cpi::place_and_make_perp_order(cpi_context, order_params, None)?;
     } else {
-        drift::cpi::place_and_make_spot_order(cpi_context, order_params, None)?;
+      //  drift::cpi::place_and_make_spot_order(cpi_context, order_params, None)?;
     }
 
     Ok(())
